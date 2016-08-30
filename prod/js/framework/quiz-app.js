@@ -3,6 +3,6 @@
 	'use strict';
 
 	angular
-		.module('quizFramework', ['ngMaterial']);
+		.module('quizFramework', ['ngSanitize']);
 
 })();

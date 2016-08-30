@@ -1,0 +1,266 @@
+.component.diagnostic-quiz {
+	padding: 20px;
+	background: $grey;
+
+	@media all and (min-width: 768px) {     
+    background: rgba($pinkTint, 0.1);
+	}
+
+	.container {
+		width: auto;
+		max-width: 642px;
+		height: 380px;
+		overflow: hidden;
+		padding: 0;
+		background: $white;
+
+		@media all and (min-width: 768px) {
+  		height: 530px;
+  	}
+	}
+
+	.header-toolbar {
+		width: 100%;
+		height: 40px;
+		padding: 0 10px;
+		background: $purple;
+
+		p {
+    	font-size: 11px;
+			font-size: 1.1rem;
+			line-height: 40px;
+			line-height: 4.0rem;
+    	font-weight: 700;
+			color: $white;
+
+			&.back, &.retry {
+				float: left;
+
+				span {
+					position: relative;
+    			top: 4px;
+					font-size: 22px;
+    			line-height: 30px;
+    			font-weight: normal;
+				}
+			}
+
+			&.step, &.result {
+				float: right;
+			}
+		}
+	}
+
+	.landing {
+		text-align: center;
+
+		button {
+			width: 200px;
+    	height: 200px;
+    	margin-top: 67px;
+			font-family: "Archer A", "Archer B", Georgia, serif;
+			font-style: italic;
+			font-weight: 500;
+			font-size: 47px;
+			font-size: 4.7rem;
+			line-height: 35px;
+			line-height: 3.5rem;
+			color: $pink;
+			border-radius: 50%;
+			background: $black;
+
+			@media all and (min-width: 768px) {     
+	      width: 355px;
+    		height: 355px;
+    		margin-top: 67px;
+	      font-size: 83px;
+				font-size: 8.3rem;
+				line-height: 62px;
+				line-height: 6.2rem;
+    	}
+
+		}
+	}
+
+	button {
+		appearance: none;
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+
+	.progress-toolbar {
+		display: table;
+		width: 100%;
+		height: 11px;
+		margin-bottom: 10px;
+
+		li {
+			display: table-cell;
+			button {
+				vertical-align: top;
+				width: 100%;
+				height: 11px;
+
+				&.btn-progress {
+					background: $orange;
+				}
+			}
+		}
+	}
+
+	.inner-container {
+		margin: 0 15px;
+
+		@media all and (min-width: 768px) {     
+      padding: 0 60px;
+  	}
+
+  	.mCSB_outside+.mCSB_scrollTools {
+			right: 40px;
+		}
+
+		.row {
+			margin: 0;
+		}
+
+  	.question, .result {
+
+  		p {
+  			margin-bottom: 10px;
+  			font-weight: 400;
+		    line-height: 20px;
+		    line-height: 2.0rem;
+		    text-align: center;
+
+		    &.heading {
+		    	font-weight: 600;
+		    }
+
+		    &.description {
+		    	text-align: left;
+		    }
+
+		    @media all and (min-width: 768px) {     
+		      margin-bottom: 20px;
+		  	}
+  		}
+
+  		img {
+  			margin: 0 auto 10px;
+
+  			@media all and (min-width: 768px) {     
+		      margin-bottom: 20px;
+		  	}
+  		}
+
+  	}
+
+  	.answer {
+
+  		.clearfix {
+				display: none;
+				clear: both;
+				position: relative;
+				height: 1px;
+    		min-height: 0;
+    		padding: 0;
+
+				@media all and (min-width: 768px) {
+	      	display: block;
+	      	margin: 0 10px 20px;
+					border-bottom: 1px solid $greyDark;
+
+					&:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 50%;
+						width: 20px;
+						height: 1px;
+						margin-left: -10px;
+						background: $white;
+					}
+	  		}
+			}
+
+  		li {
+  			padding-top: 10px;
+  			padding-bottom: 10px;
+  			list-style-type: none;
+  			min-height: 40px;
+  			border-bottom: 1px solid $greyDark;
+
+  			@media all and (min-width: 768px) {
+		      min-height: 115px;
+		      padding-top: 0;
+  				padding-bottom: 0;
+		      border-bottom: none;
+		  	}
+
+		  	img {
+			    width: 100%;
+			    height: auto;
+			    max-height: 125px;
+		  		margin-top: 20px;
+
+		  		@media all and (min-width: 768px) {
+			      margin-top: 0;
+		  		}
+		  	}
+  		}
+
+  		.item {
+				position: relative;
+				min-height: 40px;
+				padding-right: 45px;
+
+				@media all and (min-width: 768px) {
+		      padding-bottom: 30px;
+	  		}
+
+  			p {
+  				line-height: 20px;
+		    	line-height: 2.0rem;
+		    	font-size: 12px;
+		    	font-size: 1.2rem;
+
+		    	span {
+		    		font-weight: 700;
+		    	}
+  			}
+
+  			button {
+  				position: absolute;
+  				top: 6px;
+  				right: 0;
+  				width: 30px;
+  				height: 30px;
+  				border: 1px solid $greyDark;
+  				font-size: 0;
+  				background: $white;
+
+  				&:hover, &:active, &:focus {
+  					background: purple;
+
+
+  					background: url(../img/icons/basket-remove-icon.png) center no-repeat;
+  				}
+
+  				&.answer-not-selected {
+						background: red;
+					}
+
+					&.answer-selected {
+						background: green;
+					}
+
+  			}
+
+  		}
+
+  	}
+
+	}
+
+}

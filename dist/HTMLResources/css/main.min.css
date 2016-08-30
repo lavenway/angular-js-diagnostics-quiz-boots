@@ -3890,50 +3890,187 @@ h6 {
     height: 2000px;
     background: red; }
 
-body {
-  font-size: 14px; }
-
-p {
-  margin-bottom: 10px; }
-
-.bg-info {
-  padding: 5px;
-  border: 2px solid blue; }
-
-.bg-danger {
-  background: red; }
-
-.bg-success {
-  background: green; }
-
-.image-selected {
-  border: 3px solid blue; }
-
-.image-answer {
-  width: 50%; }
-  .image-answer.bg-danger {
-    border: 10px solid red; }
-  .image-answer.bg-success {
-    border: 10px solid green; }
-
-#quiz-wrapper {
-  margin-top: 40px;
+.component.diagnostic-quiz {
   padding: 20px;
-  border: 2px solid black; }
-
-.landing {
-  margin-top: 20px;
-  width: 100%;
-  height: 300px;
-  background: pink; }
-
-.answer-wrapper {
-  margin-top: 20px; }
-  .answer-wrapper p {
-    margin: 0; }
-
-.progress-toolbar {
-  margin-bottom: 10px; }
+  background: #cccccc; }
+  @media all and (min-width: 768px) {
+    .component.diagnostic-quiz {
+      background: rgba(229, 0, 125, 0.1); } }
+  .component.diagnostic-quiz .container {
+    width: auto;
+    max-width: 642px;
+    height: 380px;
+    overflow: hidden;
+    padding: 0;
+    background: #ffffff; }
+    @media all and (min-width: 768px) {
+      .component.diagnostic-quiz .container {
+        height: 530px; } }
+  .component.diagnostic-quiz .header-toolbar {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background: #8c0d59; }
+    .component.diagnostic-quiz .header-toolbar p {
+      font-size: 11px;
+      font-size: 1.1rem;
+      line-height: 40px;
+      line-height: 4.0rem;
+      font-weight: 700;
+      color: #ffffff; }
+      .component.diagnostic-quiz .header-toolbar p.back, .component.diagnostic-quiz .header-toolbar p.retry {
+        float: left; }
+        .component.diagnostic-quiz .header-toolbar p.back span, .component.diagnostic-quiz .header-toolbar p.retry span {
+          position: relative;
+          top: 4px;
+          font-size: 22px;
+          line-height: 30px;
+          font-weight: normal; }
+      .component.diagnostic-quiz .header-toolbar p.step, .component.diagnostic-quiz .header-toolbar p.result {
+        float: right; }
+  .component.diagnostic-quiz .landing {
+    text-align: center; }
+    .component.diagnostic-quiz .landing button {
+      width: 200px;
+      height: 200px;
+      margin-top: 67px;
+      font-family: "Archer A", "Archer B", Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 47px;
+      font-size: 4.7rem;
+      line-height: 35px;
+      line-height: 3.5rem;
+      color: #ff0099;
+      border-radius: 50%;
+      background: #000000; }
+      @media all and (min-width: 768px) {
+        .component.diagnostic-quiz .landing button {
+          width: 355px;
+          height: 355px;
+          margin-top: 67px;
+          font-size: 83px;
+          font-size: 8.3rem;
+          line-height: 62px;
+          line-height: 6.2rem; } }
+  .component.diagnostic-quiz button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+    outline: none;
+    background: transparent; }
+  .component.diagnostic-quiz .progress-toolbar {
+    display: table;
+    width: 100%;
+    height: 11px;
+    margin-bottom: 10px; }
+    .component.diagnostic-quiz .progress-toolbar li {
+      display: table-cell; }
+      .component.diagnostic-quiz .progress-toolbar li button {
+        vertical-align: top;
+        width: 100%;
+        height: 11px; }
+        .component.diagnostic-quiz .progress-toolbar li button.btn-progress {
+          background: #ef7c00; }
+  .component.diagnostic-quiz .inner-container {
+    margin: 0 15px; }
+    @media all and (min-width: 768px) {
+      .component.diagnostic-quiz .inner-container {
+        padding: 0 60px; } }
+    .component.diagnostic-quiz .inner-container .mCSB_outside + .mCSB_scrollTools {
+      right: 40px; }
+    .component.diagnostic-quiz .inner-container .row {
+      margin: 0; }
+    .component.diagnostic-quiz .inner-container .question p, .component.diagnostic-quiz .inner-container .result p {
+      margin-bottom: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      line-height: 2.0rem;
+      text-align: center; }
+      .component.diagnostic-quiz .inner-container .question p.heading, .component.diagnostic-quiz .inner-container .result p.heading {
+        font-weight: 600; }
+      .component.diagnostic-quiz .inner-container .question p.description, .component.diagnostic-quiz .inner-container .result p.description {
+        text-align: left; }
+      @media all and (min-width: 768px) {
+        .component.diagnostic-quiz .inner-container .question p, .component.diagnostic-quiz .inner-container .result p {
+          margin-bottom: 20px; } }
+    .component.diagnostic-quiz .inner-container .question img, .component.diagnostic-quiz .inner-container .result img {
+      margin: 0 auto 10px; }
+      @media all and (min-width: 768px) {
+        .component.diagnostic-quiz .inner-container .question img, .component.diagnostic-quiz .inner-container .result img {
+          margin-bottom: 20px; } }
+    .component.diagnostic-quiz .inner-container .answer .clearfix {
+      display: none;
+      clear: both;
+      position: relative;
+      height: 1px;
+      min-height: 0;
+      padding: 0; }
+      @media all and (min-width: 768px) {
+        .component.diagnostic-quiz .inner-container .answer .clearfix {
+          display: block;
+          margin: 0 10px 20px;
+          border-bottom: 1px solid #666666; }
+          .component.diagnostic-quiz .inner-container .answer .clearfix:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 20px;
+            height: 1px;
+            margin-left: -10px;
+            background: #ffffff; } }
+    .component.diagnostic-quiz .inner-container .answer li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      list-style-type: none;
+      min-height: 40px;
+      border-bottom: 1px solid #666666; }
+      @media all and (min-width: 768px) {
+        .component.diagnostic-quiz .inner-container .answer li {
+          min-height: 115px;
+          padding-top: 0;
+          padding-bottom: 0;
+          border-bottom: none; } }
+      .component.diagnostic-quiz .inner-container .answer li img {
+        width: 100%;
+        height: auto;
+        max-height: 125px;
+        margin-top: 20px; }
+        @media all and (min-width: 768px) {
+          .component.diagnostic-quiz .inner-container .answer li img {
+            margin-top: 0; } }
+    .component.diagnostic-quiz .inner-container .answer .item {
+      position: relative;
+      min-height: 40px;
+      padding-right: 45px; }
+      @media all and (min-width: 768px) {
+        .component.diagnostic-quiz .inner-container .answer .item {
+          padding-bottom: 30px; } }
+      .component.diagnostic-quiz .inner-container .answer .item p {
+        line-height: 20px;
+        line-height: 2.0rem;
+        font-size: 12px;
+        font-size: 1.2rem; }
+        .component.diagnostic-quiz .inner-container .answer .item p span {
+          font-weight: 700; }
+      .component.diagnostic-quiz .inner-container .answer .item button {
+        position: absolute;
+        top: 6px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #666666;
+        font-size: 0;
+        background: #ffffff; }
+        .component.diagnostic-quiz .inner-container .answer .item button:hover, .component.diagnostic-quiz .inner-container .answer .item button:active, .component.diagnostic-quiz .inner-container .answer .item button:focus {
+          background: purple;
+          background: url(../img/icons/basket-remove-icon.png) center no-repeat; }
+        .component.diagnostic-quiz .inner-container .answer .item button.answer-not-selected {
+          background: red; }
+        .component.diagnostic-quiz .inner-container .answer .item button.answer-selected {
+          background: green; }
 
 /*!
  * Angular Material Design
@@ -16870,50 +17007,5 @@ md-tooltip._md-show {
 @media print {
   .hide-print:not(.show-print):not(.show) {
     display: none !important; } }
-
-body {
-  font-size: 14px; }
-
-p {
-  margin-bottom: 10px; }
-
-.bg-info {
-  padding: 5px;
-  border: 2px solid blue; }
-
-.bg-danger {
-  background: red; }
-
-.bg-success {
-  background: green; }
-
-.image-selected {
-  border: 3px solid blue; }
-
-.image-answer {
-  width: 50%; }
-  .image-answer.bg-danger {
-    border: 10px solid red; }
-  .image-answer.bg-success {
-    border: 10px solid green; }
-
-#quiz-wrapper {
-  margin-top: 40px;
-  padding: 20px;
-  border: 2px solid black; }
-
-.landing {
-  margin-top: 20px;
-  width: 100%;
-  height: 300px;
-  background: pink; }
-
-.answer-wrapper {
-  margin-top: 20px; }
-  .answer-wrapper p {
-    margin: 0; }
-
-.progress-toolbar {
-  margin-bottom: 10px; }
 
 /*# sourceMappingURL=main.min.css.map */

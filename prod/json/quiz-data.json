@@ -1,66 +1,37 @@
 {
-	"JSONScoreDescription": [{
-		"score": 0,
-		"tagline": "You are a loser",
-		"description": "You are a loser, lorem ipsum dolor"
-	}, {
-		"score": 1,
-		"tagline": "You got a terrible score",
-		"description": "You got a terrible score, lorem ipsum dolor"
-	}, {
-		"score": 2,
-		"tagline": "You got a bad score",
-		"description": "You got a bad score, lorem ipsum dolor"
-	}, {
-		"score": 3,
-		"tagline": "You got an ok score",
-		"description": "You got an ok score, lorem ipsum dolor"
-	}, {
-		"score": 4,
-		"tagline": "You got an average score",
-		"description": "You got an average score, lorem ipsum dolor"
-	}, {
-		"score": 5,
-		"tagline": "You got a good score",
-		"description": "You got a good score, lorem ipsum dolor"
-	}, {
-		"score": 6,
-		"tagline": "You got an excellent score",
-		"description": "You got an excellent score, lorem ipsum dolor"
-	}, {
-		"score": 7,
-		"tagline": "You got an amazing score",
-		"description": "You got an amazing score, lorem ipsum dolor"
-	}],
-
-	"JSONCorrectAnswers": [{
-			"number": 1,
-			"letter": "B"
+	"JSONDiagnosticResult": [{
+			"score": 0,
+			"title": "You are mostly A's",
+			"image": "HTMLResources/img/result-image-1.png",
+			"description": "This is the <strong>description</strong> for the mostly A's description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		}, {
-			"number": 2,
-			"letter": "C"
+			"score": 1,
+			"title": "You are mostly B's",
+			"image": "HTMLResources/img/result-image-1.png",
+			"description": "This is the description for the mostly B's description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
 		}, {
-			"number": 3,
-			"letter": "D"
+			"score": 2,
+			"title": "You are mostly C's",
+			"image": "HTMLResources/img/result-image-1.png",
+			"description": "This is the description for the mostly C's description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
 		}, {
-			"number": 0,
-			"letter": "A"
+			"score": 3,
+			"title": "You are mostly D's",
+			"image": "HTMLResources/img/result-image-1.png",
+			"description": "This is the description for the mostly D's description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
 		}, {
-			"number": 2,
-			"letter": "C"
-		}, {
-			"number": 0,
-			"letter": "A"
-		}, {
-			"number": 3,
-			"letter": "D"
+			"score": null,
+			"title": "You are multiple answers",
+			"image": "HTMLResources/img/result-image-1.png",
+			"description": "This is the description for the generic answer description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
 	}],
 
 	"JSONQuizData": [{
 		"type": "text",
-		"text": "This is question 1 - the correct answer is B.",
+		"titleText": "This is question 1.",
+		"titleImage": "HTMLResources/img/result-image-1.png",
 		"possibilities": [{
-			"answer": "This is option answer A"
+			"answer": "This is <strong>option</strong> answer A, i have a very long answer description and it's very boring to read."
 		}, {
 			"answer": "This is option answer B"
 		}, {
@@ -73,7 +44,8 @@
 		"correct": null
 	}, {
 		"type": "text",
-		"text": "This is question 2 - the correct answer is C.",
+		"titleText": "This is question 2.",
+		"titleImage": null,
 		"possibilities": [{
 			"answer": "This is option answer A"
 		}, {
@@ -88,7 +60,8 @@
 		"correct": null
 	}, {
 		"type": "text",
-		"text": "This is question 3 - the correct answer is D.",
+		"titleText": "This is question 3.",
+		"titleImage": null,
 		"possibilities": [{
 			"answer": "This is option answer A"
 		}, {
@@ -103,7 +76,8 @@
 		"correct": null
 	}, {
 		"type": "text",
-		"text": "This is question 4 - the correct answer is A.",
+		"titleText": "This is question 4.",
+		"titleImage": null,
 		"possibilities": [{
 			"answer": "This is option answer A"
 		}, {
@@ -118,7 +92,8 @@
 		"correct": null
 	}, {
 		"type": "text",
-		"text": "This is question 5 - the correct answer is C.",
+		"titleText": "This is question 5.",
+		"titleImage": null,
 		"possibilities": [{
 			"answer": "This is option answer A"
 		}, {
@@ -132,8 +107,25 @@
 		"selected": null,
 		"correct": null
 	}, {
+		"type": "image",
+		"titleText": "This is question 6.",
+		"titleImage": null,
+		"possibilities": [{
+			"answerImage": "HTMLResources/img/result-image-1.png"
+		}, {
+			"answerImage": "HTMLResources/img/result-image-1.png"
+		}, {
+			"answerImage": "HTMLResources/img/result-image-1.png"
+		}, {
+			"answerImage": "HTMLResources/img/result-image-1.png"
+		}],
+		"feedback": "This is a detailed description regarding the answer to question 6",
+		"selected": null,
+		"correct": null
+	}, {
 		"type": "text",
-		"text": "This is question 6 - the correct answer is A.",
+		"titleText": "This is question 7.",
+		"titleImage": null,
 		"possibilities": [{
 			"answer": "This is option answer A"
 		}, {
@@ -143,22 +135,59 @@
 		}, {
 			"answer": "This is option answer D"
 		}],
-		"feedback": "This is a detailed description regarding the answer to question 6",
+		"feedback": "This is a detailed description regarding the answer to question 7",
 		"selected": null,
 		"correct": null
 	}, {
-		"type": "image",
-		"text": "This is question 7 - the correct answer is D.",
+		"type": "text",
+		"titleText": "This is question 8.",
+		"titleImage": null,
 		"possibilities": [{
-			"answer": "http://www.animalspot.net/wp-content/uploads/2012/01/Monkey-Photos.jpg"
+			"answer": "This is option answer A"
 		}, {
-			"answer": "http://www.animalspot.net/wp-content/uploads/2012/01/Monkey-Photos.jpg"
+			"answer": "This is option answer B"
 		}, {
-			"answer": "http://www.animalspot.net/wp-content/uploads/2012/01/Monkey-Photos.jpg"
+			"answer": "This is option answer C"
 		}, {
-			"answer": "http://www.animalspot.net/wp-content/uploads/2012/01/Monkey-Photos.jpg"
+			"answer": "This is option answer D"
 		}],
-		"feedback": "This is a detailed description regarding the answer to question 7",
+		"feedback": "This is a detailed description regarding the answer to question 8",
+		"selected": null,
+		"correct": null
+	}, {
+		"type": "text",
+		"titleText": "This is question 9.",
+		"titleImage": null,
+		"possibilities": [{
+			"answer": "This is option answer A"
+		}, {
+			"answer": "This is option answer B"
+		}, {
+			"answer": "This is option answer C"
+		}, {
+			"answer": "This is option answer D"
+		}],
+		"feedback": "This is a detailed description regarding the answer to question 9",
+		"selected": null,
+		"correct": null
+	}, {
+		"type": "image-text",
+		"titleText": "This is question 10.",
+		"titleImage": null,
+		"possibilities": [{
+			"answerImage": "HTMLResources/img/result-image-1.png",
+			"answer": "This is option answer A"
+		}, {
+			"answerImage": "HTMLResources/img/result-image-1.png",
+			"answer": "This is option answer B"
+		}, {
+			"answerImage": "HTMLResources/img/result-image-1.png",
+			"answer": "This is option answer C"
+		}, {
+			"answerImage": "HTMLResources/img/result-image-1.png",
+			"answer": "This is option answer D"
+		}],
+		"feedback": "This is a detailed description regarding the answer to question 10",
 		"selected": null,
 		"correct": null
 	}]
